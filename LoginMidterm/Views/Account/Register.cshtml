@@ -1,0 +1,68 @@
+﻿@model LoginMidterm.Models.Registration
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Course Registration Form</title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Course Registration Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+
+    @Html.AntiForgeryToken()
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div class="video">
+        <div class="center-container">
+            <div class="w3ls-agileinfo">
+                <h1> Course Registration Form </h1>
+            </div>
+            <div class="bg-agile">
+                <h2>Register </h2>
+                <div class="login-form">
+                    <form action="Register" method="post">
+                        
+                                <input type="text" name="UserId" placeholder="ID" required="" />
+                                <input type="text" name="FirstName" placeholder="First Name" required="" />
+                                <input type="text" name="LastName" placeholder="Last Name" required="" />
+                                <div class="left-w3">
+                                    <select class="form-control">
+                                        <option>School Department</option>
+                                        <option>School of Computer Science</option>
+                                        <option>School of Chemical Engineering</option>
+                                        <option> School of Arts</option>
+
+
+                                    </select>
+                                </div>
+                                <input type="email" name="Email" placeholder="Email" required="" />
+                                <input type="text" name="Subject" placeholder="Subject" required="" />
+                                <div class="left-w3">
+                                    <select class="form-control">
+                                        <option>Choose a year</option>
+                                        <option>First Year</option>
+                                        <option>Second Year</option>
+                                        <option> Third Year</option>
+                                        <option>Fourth Year</option>
+
+                                    </select>
+                                </div>
+
+                                <input type="text" name="Number" placeholder="Phone Number" required="" />
+                                <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <!-- //banner -->
+        </div>
+    </div>
+</body>
+</html>
